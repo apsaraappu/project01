@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-BASICS</title>
+</head>
+<style>
+    .cssCombinations{
+        background-color: sandybrown;
+        color: white;
+
+    }
+    .cssCombinations>p{
+        background-color: black;
+    }
+    .cssCombinations>div>p{
+        background-color: red;
+        
+    }
+</style>
+<body>
+    <center>
+        <h1>There are 4 different combinations in css...!</h1>
+    </center>
+    <hr>
+    <ol>
+        <li>Descendent Selector(USING SPACE)</li>
+        <li>Child Selector (USING  > SYMBOLS)</li>
+        <li>Adjacent Sibling Selector (USING + SYMBOLS)</li>
+        <li>General Sibling Selector (USING ~ SYMBOL)</li>
+    </ol>
+    <hr>
+    <h1>Child Selector (USING  > SYMBOL) Example....!</h1>
+    <div class="cssCombinations">
+        <h3>first H3 Tag....!(child)</h3>
+        <p>First p Tag...!(child)</p>
+        <h3>Second H3 Tag....!(child)</h3>
+        <p>Second p Tag...!(child)</p>
+        <div>
+            <h3>Third H3 Tag....!(Grand child)</h3>
+        <p>Third p Tag...!(Grand child)</p>
+        </div>
+        <h3>Fourth H3 Tag....!(child)</h3>
+        <p>Fourth p Tag...!(child)</p>
+    </div>
+</body>
+</html>
